@@ -1,0 +1,31 @@
+server:
+  port: 443
+  ssl:
+    enabled: true
+    key-store: classpath:2110293_jdatastudio.com.pfx
+    key-password: 80hKDEWT
+    key-store-type: PFX
+
+http-port: 80
+
+jwt:
+  header: Authorization
+  secret: datastudio
+  expiration: 604800
+  route:
+    authentication:
+      path: /auth
+      refresh: /refresh
+
+jdatastudio:
+  cloud: true
+  storage:
+    strategy: aliyun
+    endpoint: http://oss-cn-shanghai-internal.aliyuncs.com
+
+spring:
+  application:
+    name: jdatastudio-admin
+  data:
+    mongodb:
+      uri: mongodb://jdatastudioadmin:jdatastudioadmin@101.132.97.131:27017/jdatastudio-admin

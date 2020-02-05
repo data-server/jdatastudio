@@ -1,0 +1,21 @@
+server:
+  port: 80
+
+jwt:
+  header: Authorization
+  secret: datastudio
+  expiration: 604800
+  route:
+    authentication:
+      path: /auth
+      refresh: /refresh
+
+jdatastudio:
+  cloud: true
+
+spring:
+  application:
+    name: jdatastudio-admin
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/jdatastudio-admin
