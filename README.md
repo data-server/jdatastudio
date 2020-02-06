@@ -1,5 +1,27 @@
-# 从数据库搭建restful api和中后台应用
-    
+# jdatastudio
+从数据库搭建restful api和中后台应用
+
+[![jdatastudio-demo](architecture.jpeg)](jdatastudio.mp4)
+
+## Features
+* 即配即用：0编码，通过界面配置中后台系统
+* 多数据源支持： 支持的数据源包括 mysql、mongo、elasticsearch、jr-datacenter、elasticsearch+hbase
+* 多租户：数据源、权限设置物理隔离
+* 组件化：文本、数字、日期、选择、引用(关联)
+* Api Open : 后端所有数据访问接口、元数据接口、安全接口遵循RESTFUL协议
+* 数据安全：https + spring security + jjwt + app saltKey + rbac
+* 轻量：仅依赖 jdatastudio-admin.jar 和 mongodb，可独立部署
+* 可扩展：支持数据脱敏、多表关联、数据过滤、自定义按钮
+
+## Guide
+```sh
+java -jar jdatastudio-admin.jar --spring.data.mongodb.uri=mongodb://localhost:27017/jdatastudio-admin
+```
+
+## Examples
+* `demo` https://www.jdatastudio.com admin admin
+* `api` https://www.jdatastudio.com/swagger-ui.html
+
 ## 从数据源构建通用restful api
 
 ### apis
