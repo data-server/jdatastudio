@@ -1,7 +1,7 @@
 # jdatastudio
 从数据库搭建restful api和中后台应用
 
-[![jdatastudio-demo](architecture.jpeg)](jdatastudio.mp4)
+[![jdatastudio-demo](architecture.jpeg)](https://b23.tv/av87079713)
 
 ## Features
 * 即配即用：0编码，通过界面配置中后台系统
